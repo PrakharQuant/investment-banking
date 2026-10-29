@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Banking — A Career Guide</title>
+<meta name="description" content="Investment banking explained: industry terminology, key skills, product groups, league tables, compensation, career path and exit opportunities.">
+<style>
+  :root{
+    --bg:#0b0f17; --panel:#111827; --panel2:#0f1522; --line:#1f2a3d;
+    --txt:#e6edf6; --mut:#9db0c8; --acc:#d4af37; --acc2:#7dd3fc; --grn:#34d399; --red:#f87171;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.6}
+  a{color:var(--acc2);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 20% -10%,rgba(212,175,55,.14),transparent),var(--panel2)}
+  .hero{padding:64px 0 40px}
+  .kicker{letter-spacing:.22em;text-transform:uppercase;font-size:.75rem;color:var(--acc);font-weight:700}
+  h1{font-size:clamp(1.9rem,4.6vw,3.1rem);line-height:1.15;margin:12px 0 14px;font-weight:800}
+  h1 .hl{color:var(--acc)}
+  .sub{color:var(--mut);max-width:760px;font-size:1.05rem}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .chip{border:1px solid var(--line);background:var(--panel);padding:6px 12px;border-radius:999px;font-size:.82rem;color:var(--mut)}
+  .byline{margin-top:22px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.92rem;color:var(--mut)}
+  .byline b{color:var(--txt)}
+  .logo{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--line);border-radius:8px;background:var(--panel);transition:.2s}
+  .logo:hover{border-color:var(--acc);transform:translateY(-2px)}
+  .logo svg{width:16px;height:16px;fill:var(--mut);transition:.2s}
+  .logo:hover svg{fill:var(--acc)}
+  nav{position:sticky;top:0;z-index:50;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:10px 20px}
+  nav a{white-space:nowrap;color:var(--mut);font-size:.86rem;padding:7px 12px;border-radius:8px;font-weight:600}
+  nav a:hover{color:var(--txt);background:var(--panel)}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.7rem;margin-bottom:6px;font-weight:800}
+  h2 span.n{color:var(--acc);font-size:1rem;vertical-align:super;margin-right:6px}
+  .lead{color:var(--mut);max-width:820px;margin-bottom:26px}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 18px}
+  .card h3{font-size:1.02rem;margin-bottom:8px;color:var(--acc)}
+  .card p{font-size:.92rem;color:var(--mut)}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .fbtn{border:1px solid var(--line);background:var(--panel);color:var(--mut);padding:7px 14px;border-radius:999px;font-size:.83rem;cursor:pointer;font-weight:600;transition:.15s}
+  .fbtn:hover{color:var(--txt)}
+  .fbtn.on{background:var(--acc);color:#111;border-color:var(--acc)}
+  details.term{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden}
+  details.term summary{cursor:pointer;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none}
+  details.term summary::-webkit-details-marker{display:none}
+  details.term summary .t{font-weight:700;font-size:.97rem}
+  details.term summary .cat{font-size:.72rem;color:var(--acc2);border:1px solid var(--line);padding:2px 9px;border-radius:999px;white-space:nowrap}
+  details.term .def{padding:0 16px 14px;color:var(--mut);font-size:.9rem;border-top:1px dashed var(--line);padding-top:12px}
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th{background:var(--panel2);text-align:left;padding:11px 12px;border-bottom:2px solid var(--line);color:var(--acc);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+  td{padding:11px 12px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+  tr:hover td{background:rgba(212,175,55,.05)}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+  .bar{height:8px;background:var(--panel2);border-radius:99px;overflow:hidden;margin-top:6px}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#f1d27a);border-radius:99px}
+  .skill{margin-bottom:14px}
+  .skill .lab{display:flex;justify-content:space-between;font-size:.88rem}
+  .tl{position:relative;margin-left:10px;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--acc),var(--acc2))}
+  .tl .step{position:relative;margin-bottom:22px}
+  .tl .step::before{content:"";position:absolute;left:-32px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+  .tl h3{font-size:1.05rem}
+  .tl .meta{font-size:.78rem;color:var(--acc2);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+  .tl p{color:var(--mut);font-size:.92rem;margin-top:4px}
+  .pill{display:inline-block;font-size:.76rem;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:3px 4px 0 0;color:var(--mut)}
+  .note{border-left:3px solid var(--acc);background:var(--panel2);padding:14px 16px;border-radius:0 10px 10px 0;color:var(--mut);font-size:.9rem;margin-top:18px}
+  footer{padding:40px 0 60px;color:var(--mut);font-size:.9rem}
+  footer .byline{margin-top:8px}
+  @media(max-width:640px){.hero{padding:44px 0 28px}section{padding:42px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div class="kicker">Career Guide · Finance</div>
+    <h1>Investment Banking<span class="hl">.</span><br>A practical career guide</h1>
+    <p class="sub">The advisor side of Wall Street: how M&amp;A, leveraged buyouts and capital markets actually work — the language you must speak, the skills that get you hired, who pays what, and where the exits lead.</p>
+    <div class="chips">
+      <span class="chip">M&amp;A &amp; LBOs</span><span class="chip">ECM &amp; DCM</span><span class="chip">Coverage vs Products</span>
+      <span class="chip">League Tables</span><span class="chip">Analyst → MD</span><span class="chip">Private Equity Exits</span>
+    </div>
+    <div class="byline">
+      Created by <b>Prakhar Gupta</b> · Quant Finance
+      <a class="logo" href="https://www.linkedin.com/in/prakhar-gupta-5b7250372/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.15 1.46-2.15 2.97v5.65H9.34V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+      <a class="logo" href="https://x.com/PrakharQuant" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#industry">Industry</a>
+  <a href="#groups">Product Groups</a>
+  <a href="#glossary">Terminology</a>
+  <a href="#skills">Skills</a>
+  <a href="#leagues">Banks &amp; Leagues</a>
+  <a href="#money">Compensation</a>
+  <a href="#path">Career Path</a>
+  <a href="#exits">Exit Ops</a>
+  <a href="#breakin">Breaking In</a>
+</div></nav>
+
+<section id="industry"><div class="wrap">
+  <h2><span class="n">01</span>What Investment Banking Actually Is</h2>
+  <p class="lead">An investment bank is an <b>intermediary and advisor</b>: it connects companies that need capital with investors who have it, and advises on transformational transactions. It does not trade its own money as its core business (that's the sales &amp; trading desk). The two revenue engines are:</p>
+  <div class="grid g2">
+    <div class="card"><h3>Advisory</h3><p>Selling a company, buying one, merging two, taking one private or public, defending against a hostile raid. Fee-for-service, margin-rich, brand-driven. Think M&amp;A and restructuring.</p></div>
+    <div class="card"><h3>Underwriting / Capital Markets</h3><p>Raising debt (DCM) or equity (ECM): IPOs, secondaries, corporate bonds, leveraged loans. Banks commit risk (firm-commitment deals) or simply distribute (best-efforts), earning spread/fees on billions of face value.</p></div>
+  </div>
+  <div class="note">One mental model: bankers monetise <b>events in a company's life</b> — founding (venture), growth (debt/equity raises), change of control (M&amp;A), distress (restructuring), succession (private wealth). Each event has a product group attached to it.</div>
+</div></section>
+
+<section id="groups"><div class="wrap">
+  <h2><span class="n">02</span>How a Bank Is Organised</h2>
+  <p class="lead">Inside IBD, teams split along two axes: <b>Coverage</b> (relationship owners, organised by industry or by client type) and <b>Products</b> (technical deal specialists, organised by transaction type). You staff a deal as Coverage + Industry + Product.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Industry Coverage</h3><p>TMT, Healthcare, Industrials, Consumer/Retail, Energy &amp; Power, Financial Institutions (FIG), Real Estate. You own the client relationship and originate ideas.</p></div>
+    <div class="card"><h3>Geographic / Client Coverage</h3><p>Global Clients / Large Corporates, Mid-Market / Regional, Sponsor Coverage (PE firms as clients), Ventures &amp; Origins (startups).</p></div>
+    <div class="card"><h3>M&amp;A Product</h3><p>Financial sponsors (Sponsor M&amp;A / LBO), general strategic M&amp;A, take-privates. Valuation, fairness opinions, merger models.</p></div>
+    <div class="card"><h3>Leveraged Finance</h3><p>Structuring and distributing debt for LBOs: term loans, high-yield bonds, unitranche. Where credit analysis meets deal-making.</p></div>
+    <div class="card"><h3>ECM / DCM</h3><p>Equity Capital Markets runs IPOs, follow-ons, convertibles; Debt Capital Markets runs investment-grade bonds and liability management. Execution-heavy, calendar-driven.</p></div>
+    <div class="card"><h3>Restructuring &amp; SPACs</h3><p>Distressed advisory, DIP financing, pre-packaged bankruptcies; sponsor-led acquisition vehicles. Counter-cyclical franchises that boom when others shrink.</p></div>
+  </div>
+  <div class="note">Adjacent desks you'll work with constantly: <b>Equity Research</b> (sector views, "wall-crossing"), <b>Sales &amp; Trading</b> (distribution, block trades), <b>Wealth Management</b> (selling your deals to UHNW allocators), and <b>Legal / Compliance</b> (the reason everything takes longer than you think).</div>
+</div></section>
+
+<section id="glossary"><div class="wrap">
+  <h2><span class="n">03</span>Industry Terminology Decoder</h2>
+  <p class="lead">Speak the language or drown in the first recruiting round. Click any term; filter by category.</p>
+  <div class="toolbar" id="termFilters"></div>
+  <div id="terms"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2><span class="n">04</span>Key Skills Required</h2>
+  <p class="lead">Banking rewards technical accuracy under extreme time pressure, plus the soft layer that keeps clients calm. Approximate weightings for an analyst's first two years:</p>
+  <div class="grid g2">
+    <div>
+      <div class="skill"><div class="lab"><span>Financial modelling (3-statement, DCF, LBO, merger)</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Excel speed &amp; formatting discipline</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+      <div class="skill"><div class="lab"><span>PowerPoint / pitch-book craft</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Accounting fluency (GAAP/IFRS, purchase accounting)</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Valuation theory (comps, precedents, football field)</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div>
+    </div>
+    <div>
+      <div class="skill"><div class="lab"><span>Attention to detail (a typo can kill a S-1)</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Grit &amp; stamina (deal cadence, 80–100 hr weeks)</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Communication &amp; client presence</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Project management (data rooms, process letters)</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+      <div class="skill"><div class="lab"><span>Basic Python / SQL (increasingly valued)</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div>
+    </div>
+  </div>
+  <div style="margin-top:22px">
+    <span class="pill">Wall Street Prep / BIWS / M&amp;U courses</span><span class="pill">CPA / CFA Level I signals seriousness</span><span class="pill">CA / MBA from target school is the classic pivot</span><span class="pill">Know a full LBO walk-through cold</span><span class="pill">Read the WSJ deals column daily</span>
+  </div>
+</div></section>
+
+<section id="leagues"><div class="wrap">
+  <h2><span class="n">05</span>The Banks &amp; How League Tables Work</h2>
+  <p class="lead">Deal volume is ranked in league tables (Refinitiv/LSEG, Bloomberg). Positions come from fee pools and mandates — being "left of the comma" (top tier) compounds: better clients, better fees, better exits.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Tier</th><th>Banks</th><th>Characteristics</th></tr></thead>
+    <tbody>
+      <tr><td><b>Bulge Bracket (BB)</b></td><td>Goldman Sachs, Morgan Stanley, J.P. Morgan (the "Big Three"); Bank of America, Citi, Barclays, UBS, Deutsche Bank</td><td>Full-service global franchises, largest mandates, strongest brands, most structured training.</td></tr>
+      <tr><td><b>Elite Boutique (EB)</b></td><td>Evercore, Lazard, Centerview Partners, PJT Partners, Moelis, Houlihan Lokey</td><td>Advisory-only focus, highest fee per headcount, small teams, deal-intensive culture, no lending conflicts.</td></tr>
+      <tr><td><b>Mid-Market / Regionals</b></td><td>William Blair, Robert W. Baird, Jefferies (cross-over), Piper Sandler, TD Cowen</td><td>Smaller deals ($50m–$2bn), juniors touch everything earlier; strong middle-market sponsor networks.</td></tr>
+      <tr><td><b>India / Local context</b></td><td>Avendus, Kotak Institutional Equities, IDFC Capital, Motilal Oswal, Nuvama, DSP, Equirus</td><td>Domestic M&amp;A, book-running on NSE/BSE IPOs, cross-border sell-side; growing sponsor coverage desks.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Regulatory backbone: SEC/FINRA (US), FCA/PRA (UK), SEBI (India — merchant banker &amp; underwriter norms, book-building via TPR regulations). Know which regulator governs an IPO prospectus vs a private placement.</div>
+</div></section>
+
+<section id="money"><div class="wrap">
+  <h2><span class="n">06</span>Compensation Snapshot</h2>
+  <p class="lead">Base + big bonus, scaling steeply with seniority. Indicative total-comp ranges (US metros, recent cycles; India roughly 40–60% of these figures in absolute terms but similar structure):</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Level</th><th>Typical age</th><th>Total comp (US)</th><th>What you're paid for</th></tr></thead>
+    <tbody>
+      <tr><td>Analyst</td><td>22–24</td><td>$170k–$230k</td><td>Models, comps, pitch books, grinding through data rooms.</td></tr>
+      <tr><td>Associate</td><td>24–27 (or post-MBA)</td><td>$270k–$400k</td><td>Running the deal day-to-day, reviewing analysts.</td></tr>
+      <tr><td>Vice President</td><td>28–33</td><td>$400k–$650k</td><td>Project-managing multiple live processes, client logistics.</td></tr>
+      <tr><td>Director / ED</td><td>33–38</td><td>$600k–$1m+</td><td>Marketing, mentoring, early origination.</td></tr>
+      <tr><td>Managing Director</td><td>38+</td><td>$1m–$5m+ (top rainmakers far more)</td><td>Bringing in fees. Your network <i>is</i> the product.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Bonuses swing with firm P&amp;L and individual review ("call-out"). Expect signing bonuses and headhunter-driven jumps between levels — especially Associate→VP.</div>
+</div></section>
+
+<section id="path"><div class="wrap">
+  <h2><span class="n">07</span>Career Path: Analyst to Managing Director</h2>
+  <div class="tl">
+    <div class="step"><div class="meta">Years 1–2 · Analyst</div><h3>The grind &amp; the gateway</h3><p>Recruited out of undergrad (or a pre-experience master's). Excel factory floor: comps, precedents, due diligence lists, 2 a.m. revisions. Up-or-out: ~70–80% leave after two years — deliberately.</p></div>
+    <div class="step"><div class="meta">Years 3–5 · Associate</div><h3>Own the mechanics</h3><p>Promoted or MBA-hired. You now run working sessions, sanity-check every number leaving the team, and start drafting process letters and information memoranda.</p></div>
+    <div class="step"><div class="meta">Years 6–9 · Vice President</div><h3>Run the process</h3><p>Multiple live deals simultaneously. You interface with management teams, coordinate legal/accounting workstreams, and keep the MD's client promises on schedule.</p></div>
+    <div class="step"><div class="meta">Years 10–13 · Director / ED</div><h3>Start carrying a book</h3><p>Hybrid role: execution leadership plus targeted marketing. Promotion to MD is gated on demonstrated origination, not effort.</p></div>
+    <div class="step"><div class="meta">Year 14+ · Managing Director</div><h3>Sell, then advise</h3><p>Your job is trust: CEOs, boards, PE principals calling <i>you</i>. Compensation tracks fees you generate. Below the MD line banks pay for work; above it they pay for relationships.</p></div>
+  </div>
+</div></section>
+
+<section id="exits"><div class="wrap">
+  <h2><span class="n">08</span>Exit Opportunities</h2>
+  <p class="lead">IB is famously a two-year launchpad. The standard destinations, and why banking trains you for them:</p>
+  <div class="grid g3">
+    <div class="card"><h3>Private Equity</h3><p>The marquee exit. LBO modelling, due-diligence discipline and deal exposure translate directly. Mega-funds (Blackstone, KKR, Apollo, Carlyle) recruit ex-BB/EB analysts heavily.</p></div>
+    <div class="card"><h3>Hedge Funds</h3><p>Fundamental long/short shops value your sector knowledge and valuation chops; activist funds (Elliott-type) love the legal-process literacy from contested deals.</p></div>
+    <div class="card"><h3>Corporate Development / Strategy</h3><p>In-house M&amp;A teams at corporates: screening targets, running sell-side carve-outs, integration planning. Better hours, same skillset.</p></div>
+    <div class="card"><h3>Venture Capital &amp; Growth Equity</h3><p>Especially after tech/TMT coverage or fintech product stints; sourcing, term sheets, cap-table and structure fluency carry over.</p></div>
+    <div class="card"><h3>Business School</h3><p>Top MBA programmes treat IB analyst stints as gold-standard work experience; the classic Associate-via-MBA re-entry path.</p></div>
+    <div class="card"><h3>Entrepreneurship / Operating Roles</h3><p>You've watched hundreds of owners sell businesses; many bankers conclude they'd rather build one. Deal-network access is the hidden asset.</p></div>
+  </div>
+</div></section>
+
+<section id="breakin"><div class="wrap">
+  <h2><span class="n">09</span>Breaking In</h2>
+  <div class="grid g2">
+    <div class="card"><h3>Routes in</h3><p>① Target-school undergraduate recruiting (spring "off-cycle" internships → summer analyst → return offer). ② Post-experience master's / finance masters. ③ MBA into Associate. ④ Lateral moves from Big-4 deal advisory, restructuring or corporate development. ⑤ Off-target hustle: networking so hard it becomes a credential.</p></div>
+    <div class="card"><h3>Interview essentials</h3><p>Technical: three-statement linkages, DCF mechanics, accretion/dilution, LBO walk-through, why EV not equity value. Behavioral: why banking, why this group, a leadership-under-pressure story. Market awareness: pitch a live idea — buyer, seller, rationale, price.</p></div>
+  </div>
+  <div class="note">Reality check: the hours are brutal and the work is often unglamorous, but the density of learning, the brand durability, and the optionality on exit make it one of the highest-leverage first careers in finance.</div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <p>Compiled from public market practice · educational purposes only · not investment advice or recruitment guarantees.</p>
+    <div class="byline">
+      Created by <b>Prakhar Gupta</b> — Quant Finance · <a href="mailto:bestofprakhar@gmail.com">bestofprakhar@gmail.com</a>
+      <a class="logo" href="https://www.linkedin.com/in/prakhar-gupta-5b7250372/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.15 1.46-2.15 2.97v5.65H9.34V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+      <a class="logo" href="https://x.com/PrakharQuant" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+    </div>
+    <p style="margin-top:14px">Part of the finance career-guide series: <a href="https://prakharquant.github.io/commodity-trading-quant-career/">Commodity Trading</a> · <a href="https://prakharquant.github.io/currency-derivatives-trading/">Currency Derivatives</a> · <a href="https://prakharquant.github.io/actuarial-finance/">Actuarial Finance</a></p>
+  </div>
+</footer>
+
+<script>
+const TERMS=[
+["Teaser","Deals","One-page anonymous summary of a company for sale, sent to potential buyers to gauge interest without revealing identity."],
+["CIM / Info Memo","Deals","Confidential Information Memorandum — the multi-hundred-page 'prospectus' for a private sale containing financials, market data and management bios."],
+["Data Room","Deals","Secure online repository of contracts, financials and diligence documents opened to shortlisted buyers. Virtual data rooms replaced physical ones post-2000."],
+["SPA","Deals","Share Purchase Agreement — the definitive contract transferring ownership; houses reps & warranties, indemnities, earn-outs and closing conditions."],
+["MAC Clause","Deals","Material Adverse Change clause allowing a buyer to walk if the target deteriorates catastrophically between signing and closing. Heavily litigated."],
+["Earn-out","Deals","Deferred consideration contingent on future performance — bridges a valuation gap when seller and buyer disagree about growth."],
+["Locked Box","Deals","Price fixed on an old balance-sheet date with no post-signing adjustment; common in Europe. Companion concept: ticking fees."],
+["Carve-out","Deals","Selling a division/business unit separately from the parent. Requires standalone financials built from allocated costs — notoriously contentious."],
+["Stalking Horse","Deals","In distressed sales, a pre-agreed initial bidder whose bid sets the floor price and process terms for the auction."],
+["Fairness Opinion","Deals","Banker's letter stating consideration is fair from a financial point of view — board cover, litigation shield, fee-rich deliverable."],
+["Merger Model","Deals","Combined pro-forma P&L/balance sheet showing synergies and financing effects to test accretion/dilution before a bid goes out."],
+["Accretion / Dilution","Valuation","Whether combining (or issuing shares) changes EPS. Core screen for stock-funded acquisitions and dilutive secondary offerings."],
+["Purchase Accounting","Valuation","Post-deal restatement: assets marked to fair value, goodwill created, intangibles amortised — silently reshapes future earnings."],
+["Football Field","Valuation","Chart comparing valuation ranges across DCF, trading comps and precedent transactions to frame negotiation zones."],
+["Precedent Transactions","Valuation","Multiples paid in past M&A of comparable companies — includes control premium, unlike trading comps."],
+["EV / EBITDA","Valuation","Enterprise-value multiple; the lingua franca for comparing companies across different capital structures."],
+["Control Premium","Valuation","Amount above market price a buyer pays for decision rights — typically 20–40% in public takeovers."],
+["Terminal Value","Valuation","Perpetuity estimate beyond the forecast horizon; often 60–80% of a DCF's answer — hence the sensitivity debates."],
+["WACC","Valuation","Weighted average cost of capital — discount rate blending cost of equity (CAPM) and after-tax cost of debt."],
+["DDQ / MI","Process","Due Diligence Questionnaire and Management Interviews — the ritual buyer interrogations that decide whether price gets trimmed."],
+["Confirmatory Diligence","Process","Buyer's final verification of agreed facts before signing; where skeletons still surface and prices still move."],
+["Clean Team","Process","Firewalled group handling competitively sensitive data between rivals in a joint deal — antitrust hygiene 101."],
+["Gun-Jumping","Process","Illegal coordination or integration before regulatory clearance. Why acquirers behave like strangers until day one post-close."],
+["HSR / Merger Control","Process","Antitrust filings (HSR in US, EU Merger Regulation in Europe) requiring waiting periods or approvals before closing."],
+["Break Fee / Reverse Break Fee","Process","Fees payable if shareholders reject the deal or if regulators/funding fail respectively — commitment signalling in public bids."],
+["Hostile Bid","Public M&A","Offer made directly to shareholders over a resistant board; defended via poison pills, white knights, crown-jewel sales, staggered boards."],
+["Take-Private","Public M&A","Sponsor (or management) buys all public float and delists the company — enabled by cheap debt and depressed multiples."],
+["Scheme of Arrangement","Public M&A","Court-sanctioned shareholder-vote alternative to a contractual merge — common UK mechanism requiring 75% approval."],
+["Going-Private / Rule 13E-3","Public M&A","US rules forcing special disclosures and fairness opinions when insiders squeeze out minority holders."],
+["LBO","Financing","Leveraged buyout: acquisition funded 50–70% with debt repaid from the target's own cash flows; returns driven by leverage, growth and multiple play."],
+["Term Loan B","Financing","Institutional, bullet-maturity senior secured loan — the default LBO funding instrument, distributed to CLOs and credit funds."],
+["High-Yield Bond","Financing","Sub-investment-grade corporate paper used in leveraged deals; covenant-light ('cov-lite') variants shifted protections toward lenders."],
+["Unitranche","Financing","Single blended senior/subordinated debt tranche from private credit funds — simpler, faster, pricier; now dominant in mid-market LBOs."],
+["Net Leverage / Interest Coverage","Financing","Covenant metrics (Debt/EBITDA, EBITDA/interest) defining how stretched a leveraged capital structure may run."],
+["Sources & Uses","Financing","Table reconciling deal funding (debt, equity, rollover) against uses (purchase price, fees, refinanced debt). Interview staple."],
+["IPO","Capital Markets","Initial public offering: first sale of shares to the public under a registration statement/prospectus; priced via roadshow and bookbuild."],
+["Bookrunners / Syndicate","Capital Markets","Lead banks compiling the investor order book; co-managers share economics. League-table credit attaches to lead positions."],
+["Green Shoe / Over-allotment","Capital Markets","Option letting underwriters sell up to 15% extra shares — a stabilisation tool and fee sweetener."],
+["Lock-Up","Capital Markets","Contractual ban (typically 180 days) on insider selling post-IPO, protecting newly public float from dumping."],
+["Roadshow","Capital Markets","Management's tour pitching institutional investors ahead of pricing; determines the demand curve and final price range."],
+["Follow-on / Secondary / Block","Capital Markets","Post-IPO primary raises (follow-ons), insider sales (secondaries), or negotiated large off-market trades for major holders."],
+["ATM Program","Capital Markets","At-the-market shelf issuance at prevailing prices — drip-feed equity raising favoured by growth companies."],
+["SPAC","Capital Markets","Special-purpose acquisition company: blank-cheque vehicle listing to later merge with a private target; boom-bust cycle since 2020."],
+["Convertible Bond","Capital Markets","Hybrid debt convertible into equity — cheaper coupon for issuers, upside optionality for investors."],
+["Liability Management","Capital Markets","Refinancings, tender offers, exchanges and repricing of existing debt — a huge recurring fee pool in credit markets."],
+["Shelf Registration","Capital Markets","Prewashed prospectus (SEC Form S-3; DRHP in India) enabling rapid successive raises once eligibility conditions are met."],
+["Restructuring","Distress","Renegotiating unsustainable capital structures: out-of-court exchanges, priming liens, forbearance agreements, or Chapter 11 plans."],
+["DIP Financing","Distress","Debtor-in-possession super-priority credit funding operations during bankruptcy — often the most protected, best-priced paper in the stack."],
+["Cramdown","Distress","Court approval of a reorganisation plan over dissenting impaired classes — the negotiating backstop of Chapter 11."],
+["Workout","Distress","Non-bankruptcy renegotiation of stressed credits; historically a premier training ground for credit judgment."],
+["Originate-to-Distribute","Model","Bank originates a loan or deal then distributes the risk to investors — structural DNA of syndicated and securitised markets."],
+["Chinese Wall / Information Barrier","Model","Legal separation between advisory (MNPI-holding) and trading/research desks; breach means enforcement action."],
+["Wall-Crossing","Model","Formally briefing an insider on confidential deal info and logging them on a restricted list to prevent trading violations."],
+["Fee Pool / Wallet","Model","Client's annual allocation of banking fees across banks; winning wallet share is the scoreboard of origination."],
+["Pitch / Bake-off","Model","Competitive presentations where hopeful banks vie for a mandate — the beauty-contest era of modern banking."]
+];
+const CATS=["All","Deals","Valuation","Process","Public M&A","Financing","Capital Markets","Distress","Model"];
+const box=document.getElementById('terms'),tf=document.getElementById('termFilters');
+CATS.forEach((c,i)=>{const b=document.createElement('button');b.className='fbtn'+(i===0?' on':'');b.textContent=c;b.onclick=()=>{document.querySelectorAll('#termFilters .fbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(c)};tf.appendChild(b)});
+function render(cat){box.innerHTML='';TERMS.filter(t=>cat==='All'||t[1]===cat).forEach(t=>{const d=document.createElement('details');d.className='term';d.innerHTML=`<summary><span class="t">${t[0]}</span><span class="cat">${t[1]}</span></summary><div class="def">${t[2]}</div>`;box.appendChild(d)})}
+render('All');
+</script>
+</body>
+</html>
